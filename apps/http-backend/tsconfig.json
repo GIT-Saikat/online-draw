@@ -1,0 +1,9 @@
+{
+    "extends":"@repo/typescript-config/base.json",
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "typeRoots":["../types/override.d.ts"]
+    },
+    "include": ["src","../types/override.d.ts"]
+}
