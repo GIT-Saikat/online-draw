@@ -13,6 +13,8 @@ interface User{
 
 //use redux or singletons for future for scalable state management . this is the simplest approach
 
+//can use Map instead of array for fatser lookup 
+
 const users: User[]=[]
 
 
@@ -46,6 +48,8 @@ wss.on("connection",function connection(ws,request){
         ws.close()
         return null;
     }
+
+    // can perform the check with map like only one device can connect and create a connection old device connection is removed
     users.push({
         userId,
         room:[],
