@@ -109,6 +109,7 @@ app.post("/room",  middleware,async (req,res)=>{
     }
 })
 
+//for existing latest messages
 app.get("/chats/:roomId",async (req,res)=>{
     try{
         const roomId= Number(req.params.roomId);

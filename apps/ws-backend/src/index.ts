@@ -11,6 +11,8 @@ interface User{
     userId:string
 }
 
+//use redux or singletons for future for scalable state management . this is the simplest approach
+
 const users: User[]=[]
 
 
@@ -101,6 +103,8 @@ wss.on("connection",function connection(ws,request){
         // console.log("message recxeived");
         // console.log(parsedData)
 
+
+        //ideal approach is throw this in a queue pipiline into a database . this is an async approach. go through the chess video
         if(parsedData.type==="chat"){
             const roomId = parsedData.roomId;
             const message = parsedData.message;
