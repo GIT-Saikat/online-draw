@@ -125,6 +125,9 @@ wss.on("connection",function connection(ws,request){
 
             // console.log(`User ${sender.userId} sent message: "${message}" in room: ${roomId}`);
 
+
+            //better approach is use queue
+
             await prismaClient.chat.create({
                 data:{
                     roomId:Number(roomId),

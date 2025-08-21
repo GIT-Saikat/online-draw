@@ -38,7 +38,7 @@ function App() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Shapes className="h-8 w-8 text-indigo-600" />
-            <span className="text-2xl font-bold text-gray-800">GUTIDRAW Clone</span>
+            <span className="text-2xl font-bold text-gray-800">GITDRAW APP</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-gray-600 hover:text-gray-900">Features</a>

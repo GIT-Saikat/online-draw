@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npx esbuild ./src/index.ts --bundle --platform=node --outfile=dist/index.js",
-    "start": "node ./dist/index.js",
-    "dev": "npm run build && npm run start"
-  },
+  "build": "npx esbuild ./src/index.ts --bundle --platform=node --outfile=dist/index.js --external:express --external:jsonwebtoken --external:@repo/common/types --external:@repo/db/client --external:@repo/backend-common/config --external:cors",
+  "start": "npx node ./dist/index.js",
+  "dev": "npx npm run build && npm run start"
+},
+  
   "keywords": [],
   "author": "",
   "license": "ISC",

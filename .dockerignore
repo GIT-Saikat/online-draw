@@ -1,0 +1,11 @@
+# Ignore a number of project-level and development-related directories and files
+.git
+.turbo
+.vscode
+.DS_Store
+*.env
+
+# Ignore node_modules folders in the root and within subdirectories
+node_modules/
+apps/*/node_modules/
+packages/*/node_modules/
